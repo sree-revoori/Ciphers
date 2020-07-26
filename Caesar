@@ -38,3 +38,14 @@ def prepare_string(s, alphabet) :
     string += newChar
   return string
   
+  # decoding
+  def caesar_shift_decode(ciphertext, shift, alphabet) : 
+  temp = ciphertext
+  string = "" 
+  newChar = ""
+  for character in temp : 
+    newIndex = c2i(character, alphabet) - shift
+    newChar = i2c(newIndex, alphabet)
+    string += newChar
+  return string
+  
