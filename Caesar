@@ -1,5 +1,5 @@
 from collections import Counter 
-# Helper Methods
+#Helper Methods
 def c2i(c, alphabet) : 
   return alphabet.index(c) 
   
@@ -19,3 +19,22 @@ def prepare_string(s, alphabet) :
     
   final = ''.join(sList)
   return final
+  
+  #encoding
+  def caesar_shift_encode(plaintext, shift, alphabet) :
+  plaintext = plaintext.upper()
+  temp = prepare_string(plaintext, alphabet) 
+  string = ""
+  newChar = ""
+  for character in temp : 
+    aIndex = c2i(character, alphabet) 
+    newIndex = c2i(character, alphabet) + shift 
+    if newIndex >= 25 : 
+      tempIndex = 25 - aIndex 
+      newIndex = shift - tempIndex - 1 
+      newChar = i2c(newIndex, alphabet)
+    else :
+      newChar = i2c(newIndex, alphabet) 
+    string += newChar
+  return string
+  
