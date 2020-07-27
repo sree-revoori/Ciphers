@@ -58,7 +58,7 @@ def prepare_string(s, alphabet) :
       
     return False 
   return True 
-  
+  # encodes sub cipher using helper method from above
   def substitution_cipher_encode(plaintext, alpha1, alpha2) : 
   temp = prepare_string(plaintext, alpha1)
   subst_validate(alpha1, alpha2)
