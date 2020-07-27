@@ -48,4 +48,14 @@ def prepare_string(s, alphabet) :
     newChar = i2c(newIndex, alphabet)
     string += newChar
   return string
+  def subst_validate(alpha1, alpha2) : 
+  alpha1 = list(alpha1)
+  alpha2 = list(alpha2)
+  for index in range(len(alpha1)) : 
+    for index2 in range(len(alpha2)) : 
+      if alpha1[index] == alpha2[index2] :
+        break
+      
+    return False 
+  return True 
   
