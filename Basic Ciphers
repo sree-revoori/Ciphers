@@ -69,4 +69,14 @@ def prepare_string(s, alphabet) :
     alpha2Character = i2c(shift, alpha2)
     ciphertext += alpha2Character
   return ciphertext
-
+def substitution_cipher_decode(ciphertext, alpha1, alpha2) : 
+  temp = prepare_string(ciphertext, alpha2)
+  subst_validate(alpha1, alpha2)
+  plaintext = "" 
+  for character in temp : 
+    alpha2Index = c2i(character, alpha2)
+    shift = alpha2Index
+    alpha1Character = i2c(shift, alpha1)
+    plaintext += alpha1Character
+  return plaintext
+  #Practically an inverse to the sub cipher encode method
