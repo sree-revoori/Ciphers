@@ -59,3 +59,14 @@ def prepare_string(s, alphabet) :
     return False 
   return True 
   
+  def substitution_cipher_encode(plaintext, alpha1, alpha2) : 
+  temp = prepare_string(plaintext, alpha1)
+  subst_validate(alpha1, alpha2)
+  ciphertext = ""
+  for character in temp : 
+    alpha1Index = c2i(character, alpha1)
+    shift = alpha1Index
+    alpha2Character = i2c(shift, alpha2)
+    ciphertext += alpha2Character
+  return ciphertext
+
