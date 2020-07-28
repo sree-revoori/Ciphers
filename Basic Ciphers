@@ -80,3 +80,20 @@ def substitution_cipher_decode(ciphertext, alpha1, alpha2) :
     plaintext += alpha1Character
   return plaintext
   #Practically an inverse to the sub cipher encode method
+  
+    
+def make_cipher_alphabet(alphabet, keyword) : 
+  keywordList = list(keyword)
+  alphbetList = list(alphabet)
+  replicate = ""
+  cipherAlphabet = ""
+  for index in range(len(keywordList)) : 
+    if keywordList[index] not in cipherAlphabet : 
+      cipherAlphabet += keywordList[index]
+  
+  for index2 in range(len(alphbetList)) : 
+    if alphbetList[index2] not in cipherAlphabet : 
+      cipherAlphabet += alphbetList[index2]
+      
+  return cipherAlphabet
+  
