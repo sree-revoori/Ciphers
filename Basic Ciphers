@@ -96,4 +96,4 @@ def make_cipher_alphabet(alphabet, keyword) :
       cipherAlphabet += alphbetList[index2]
       
   return cipherAlphabet
-  
+  # This method creates a substitution alphabet to replace the normal english alphabet in the substitution cipher
