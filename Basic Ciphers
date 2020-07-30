@@ -97,3 +97,13 @@ def make_cipher_alphabet(alphabet, keyword) :
       
   return cipherAlphabet
   # This method creates a substitution alphabet to replace the normal english alphabet in the substitution cipher
+  def keyword_substitution_cipher_encode(plaintext, keyword, alphabet_source) : 
+  plaintext = prepare_string(plaintext.upper(), alphabet_source)
+  cipherAlphabet = make_cipher_alphabet(alphabet_source, keyword)
+  cipherText = ""
+  for character in plaintext : 
+    alpha1Index = c2i(character, alphabet_source)
+    alpha2Character = i2c(alpha1Index, cipherAlphabet)
+    cipherText += alpha2Character
+  return cipherText
+  
