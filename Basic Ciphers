@@ -131,4 +131,11 @@ def make_cipher_alphabet(alphabet, keyword) :
     c = Counter(bigraphs)
     return c.most_common(4)
    
+ def frequent_trigraphs(text, alphabet) : 
+  bigraphs = []
+  for index in range(len(text) - 1) : 
+    bigraphs.append(text[index:index + 3])
+  c = Counter(bigraphs)
+  return c.most_common(4)
+   
   
