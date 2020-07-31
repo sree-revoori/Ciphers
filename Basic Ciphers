@@ -107,3 +107,15 @@ def make_cipher_alphabet(alphabet, keyword) :
     cipherText += alpha2Character
   return cipherText
   
+  def keyword_substitution_cipher_decode(ciphertext, keyword, alphabet_source) : 
+  # Inverts the encoding method
+  cipherAlphabet = make_cipher_alphabet(alphabet_source, keyword)
+  #temp = prepare_string(ciphertext, cipherAlphabet)
+  plaintext = "" 
+  for character in ciphertext : 
+    alpha2Index = c2i(character, cipherAlphabet)
+    shift = alpha2Index
+    alpha1Character = i2c(shift, alphabet_source)
+    plaintext += alpha1Character
+  return plaintext
+  
