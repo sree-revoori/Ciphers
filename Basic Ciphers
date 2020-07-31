@@ -119,3 +119,8 @@ def make_cipher_alphabet(alphabet, keyword) :
     plaintext += alpha1Character
   return plaintext
   
+  def frequent_letters(text, alphabet) : 
+    text = prepare_string(text, alphabet)
+    c = Counter(text)
+    return c.most_common(4)
+  
