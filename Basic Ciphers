@@ -123,4 +123,12 @@ def make_cipher_alphabet(alphabet, keyword) :
     text = prepare_string(text, alphabet)
     c = Counter(text)
     return c.most_common(4)
+    
+  def frequent_bigraphs(text, alphabet) : 
+    bigraphs = []
+    for index in range(len(text) - 1) : 
+      bigraphs.append(text[index:index + 2])
+    c = Counter(bigraphs)
+    return c.most_common(4)
+   
   
