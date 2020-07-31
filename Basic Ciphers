@@ -137,5 +137,13 @@ def make_cipher_alphabet(alphabet, keyword) :
     bigraphs.append(text[index:index + 3])
   c = Counter(bigraphs)
   return c.most_common(4)
+  
+  def frequent_double_letters(text, alphabet) :
+  double = []
+  for index in range(len(text) - 1) : 
+    if text[index] == text[index + 1] :
+      double.append(text[index] + text[index + 1])
+  c = Counter(double)
+  return c.most_common(4)
    
   
