@@ -195,6 +195,20 @@ def make_cipher_alphabet(alphabet, keyword) :
   print("Ciphertext = %s" % ciphertext)
   print("Recovered text = %s" % recovered_text)
   
+  def main2() : 
+  print("\n---Testing Keyword Substitution-------")
+  alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  plaintext = "To be or not to be, that is the question"
+  keyword = "SHAKESPEARE"
+  print("Cipher alphabet is " + make_cipher_alphabet(alphabet, keyword))
+  ciphertext = keyword_substitution_cipher_encode(plaintext, keyword, alphabet)
+  recovered_text = keyword_substitution_cipher_decode(ciphertext, keyword, alphabet)
+  print("Plaintext = %s" % plaintext)
+  print("Ciphertext = %s" % ciphertext)
+  print("Recovered text = %s" % recovered_text)
+  
+  
+  
   
   
   
