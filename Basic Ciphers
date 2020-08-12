@@ -215,6 +215,32 @@ def make_cipher_alphabet(alphabet, keyword) :
   text3 = text3.lower()
   print("Problem 3 Original Message : " + text3)
 
+    text3 = text3.replace('n', 'A')
+  text3 = text3.replace('e', 'T')
+  text3 = text3.replace('z', 'H')
+  text3 = text3.replace('t', 'E')
+  text3 = text3.replace('k', 'V')
+  text3 = text3.replace('c', 'O')
+  text3 = text3.replace('v', 'W')
+  text3 = text3.replace('f', 'S')
+  text3 = text3.replace('d', 'N')
+  text3 = text3.replace('x', 'R')
+  text3 = text3.replace('l', 'B')
+  text3 = text3.replace('q', 'F')
+  text3 = text3.replace('y', 'D')
+  text3 = text3.replace('w', 'J')
+  text3 = text3.replace('s', 'P')
+  text3 = text3.replace('o', 'K')
+  text3 = text3.replace('b', 'U')
+  text3 = text3.replace('r', 'I')
+  text3 = text3.replace('j', 'L')
+  text3 = text3.replace('h', 'C')
+  text3 = text3.replace('p', 'Y')
+  text3 = text3.replace('a', 'M')
+  text3 = text3.replace('u', 'Q')
+  text3 = text3.replace('g', 'G')
+  
+  
   
   
   
