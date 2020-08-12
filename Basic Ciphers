@@ -145,5 +145,22 @@ def make_cipher_alphabet(alphabet, keyword) :
       double.append(text[index] + text[index + 1])
   c = Counter(double)
   return c.most_common(4)
+  
+  def vigenere_encode(plaintext, key, alphabet) : 
+  plaintext = prepare_string(plaintext, alphabet)
+  plainList = list(plaintext)
+  keyList = list(key)
+  alphaList = list(alphabet)
+  encodeText = ""
+  
+  for index in range(len(plainList)) : 
+    plainIndex = c2i(plainList[index], alphabet)
+    keyIndex = c2i(((keyList[index % len(key)])), alphabet)
+    encodeTextIndex = (plainIndex + keyIndex) % (26)
+    encodeText += i2c(encodeTextIndex, alphabet)
+    
+  return encodeText
+  
+  
    
   
