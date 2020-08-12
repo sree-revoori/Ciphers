@@ -240,6 +240,42 @@ def make_cipher_alphabet(alphabet, keyword) :
   text3 = text3.replace('u', 'Q')
   text3 = text3.replace('g', 'G')
   
+  print("Problem 3 Decoded Message : " + text3)
+  
+  # text7 = "ZFNNANWJWYBZLKEHBZTNSKDDGJWYLWSBFNS SJWYFNKBGLKOCNKSJEBDWZFNGKLJKJNQFJP FJBXHBZTNRDKNZFNPDEJWYDRPDEGCNZNWJY FZZFLZTCNBBNBZFNNLKZFSLKONWBLCCKJAN KBPHGBZFNGNLOBLWSRDCSBZFNRJWLCBFDKN JWLWSWDTDSUWDTDSUOWDQBQFLZBYDJWYZDF LGGNWZDLWUTDSUTNBJSNBZFNRDKCDKWKLYB DRYKDQJWYDCSJZFJWODRSNLWEDKJLKZUJNA NWZFJWODRDCSSNLWEDKJLKZUZFNRLZFNKQN WNANKRDHWSJZFJWODRSNLWEDKJLKZU"
+  # text7 = text7.lower()
+  # print("Problem 7 Original Message: " + text7)
+  
+  # text7 = text7.replace(' ', '')
+  # text7 = text7.replace('z', 'T')
+  # text7 = text7.replace('f', 'H')
+  # text7 = text7.replace('n', 'E')
+  # text7 = text7.replace('l', 'A')
+  # text7 = text7.replace('r', 'F')
+  # text7 = text7.replace('k', 'R')
+  # text7 = text7.replace('u', 'Y')
+  # text7 = text7.replace('y', 'G')
+  # text7 = text7.replace('j', 'I')
+  # text7 = text7.replace('g', 'P')
+  # text7 = text7.replace('w', 'N')
+  # text7 = text7.replace('a', 'V')
+  # text7 = text7.replace('b', 'S')
+  # text7 = text7.replace('t', 'B')
+  # text7 = text7.replace('c', 'L')
+  # text7 = text7.replace('e', 'M')
+  # text7 = text7.replace('h', 'U')
+  # text7 = text7.replace('d', 'O')
+  # text7 = text7.replace('o', 'K')
+  # text7 = text7.replace('p', 'C')
+  # text7 = text7.replace('s', 'D')
+  # text7 = text7.replace('q', 'W')
+  # text7 = text7.replace('x', 'J')  
+
+  
+  # print("Problem 7 Decoded Message: " + text7)
+  
+  
+  
   
   
   
