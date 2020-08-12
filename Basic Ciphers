@@ -274,6 +274,30 @@ def make_cipher_alphabet(alphabet, keyword) :
   
   # print("Problem 7 Decoded Message: " + text7)
   
+  text1 = "XMTP CGPQR BWEKNJB GQ OTGRB EL BEQX BWEKNJB, G RFGLI."
+  text1 = text1.lower()
+  text1 = text1.replace('g', 'I')
+  text1 = text1.replace('q', 'S')
+  text1 = text1.replace('r', 'T')
+  text1 = text1.replace('e', 'A')
+  text1 = text1.replace('l', 'N')
+  text1 = text1.replace('f', 'H')
+  text1 = text1.replace('i', 'K')
+  text1 = text1.replace('b', 'E')
+  text1 = text1.replace('x', 'Y')
+  text1 = text1.replace('p', 'R')
+  text1 = text1.replace('c', 'F')
+  text1 = text1.replace('w', 'X')
+  text1 = text1.replace('k', 'M')
+  text1 = text1.replace('n', 'P')
+  text1 = text1.replace('j', 'L')
+  text1 = text1.replace('o', 'Q')
+  text1 = text1.replace('t', 'U')
+  text1 = text1.replace('m', 'O')
+  print("Problem 1 = %s" % text1)
+  
+  
+  
   
   
   
