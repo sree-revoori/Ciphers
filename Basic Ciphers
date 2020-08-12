@@ -319,6 +319,29 @@ def make_cipher_alphabet(alphabet, keyword) :
   text2 = text2.replace('k', 'P')
   print("Problem 2 = %s" % text2)
   
+  def main4() : 
+  print("\n---Testing Vigenere Cipher Encode-------")
+  plaintext = "SECRETMESSAGE"
+  keyword = "WORD"
+  alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  print("Plaintext = " + plaintext)
+  print("Keyword = " + keyword)
+  
+  encodedMessage =  vigenere_encode(plaintext, keyword, alphabet)
+  print("Encoded Message: " + encodedMessage) 
+  
+  print("\n---Testing Vigenere Cipher Decode-------")
+  ciphertext = "OSTUAHDHOGRJA"
+  keyword = "WORD"
+  alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  print("Ciphertext = " + ciphertext)
+  print("Keyword = " + keyword)
+  
+  decodedMessage = vigenere_decode(ciphertext, keyword, alphabet)
+  print("Decoded Message: " + decodedMessage) 
+  
+  
+  
   
   
   
