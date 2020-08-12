@@ -340,6 +340,8 @@ def make_cipher_alphabet(alphabet, keyword) :
   decodedMessage = vigenere_decode(ciphertext, keyword, alphabet)
   print("Decoded Message: " + decodedMessage) 
   
+  main4()
+  
   
   
   
