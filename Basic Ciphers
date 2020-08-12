@@ -161,6 +161,23 @@ def make_cipher_alphabet(alphabet, keyword) :
     
   return encodeText
   
+  def vigenere_decode(ciphertext, key, alphabet) : 
+  ciphertext = prepare_string(ciphertext, alphabet)
+  cipherList = list(ciphertext)
+  keyList = list(key)
+  alphaList = list(alphabet)
+  decodeText = ""
+  
+  for index in range(len(ciphertext)) : 
+    cipherIndex = c2i(cipherList[index], alphabet)
+    keyIndex = c2i(((keyList[index % len(key)])), alphabet)
+    decodeTextIndex = (cipherIndex - keyIndex) % (26)
+    decodeText += i2c(decodeTextIndex, alphabet)
+    
+  return decodeText
+  
+  
+  
   
    
   
