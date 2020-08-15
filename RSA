@@ -65,6 +65,15 @@ def prepare_string(s, alphabet) :
   def calc_d(n, m) : 
   #print(str(greenList))
   
+  a, b, u = 0, m, 1
+  while n > 0 : 
+      q = b // n # integer division
+      n, a, b, u = b % n, u, n, a - q * u
+  if b == 1 : 
+      return a % m 
+      
+  
+  
   
   
   
