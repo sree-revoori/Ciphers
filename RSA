@@ -20,5 +20,13 @@ def prepare_string(s, alphabet) :
     
   final = ''.join(sList)
   return final
+  
+  def mod_inverse(a, m): 
+  for number in range(0, m) : 
+    temp = (number * a) % m
+    if temp == 1 :
+      return number
+  print("Error: No possible inverse")
+  return -1
     
 
