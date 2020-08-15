@@ -39,4 +39,8 @@ def prepare_string(s, alphabet) :
     d = d//2 
     r = r + 1
     
+  d = int(d)
+  
+  
+    
 
