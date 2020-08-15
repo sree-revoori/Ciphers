@@ -55,6 +55,13 @@ def prepare_string(s, alphabet) :
       return False 
   return True 
   
+  def totient(num) : 
+  totient = 0 
+  for index in range(1, num) : #works better with smaller numbers
+    if math.gcd(index, num) == 1: 
+      totient = totient + 1
+  return totient
+  
   
   
   
