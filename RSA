@@ -7,4 +7,18 @@ def c2i(c, alphabet):
 def i2c(i, alphabet):
     return alphabet[i]
     
+def prepare_string(s, alphabet) :
+  temp = s 
+  alphaList = list(alphabet)
+  sList = list(temp)
+  for index in range(len(sList)) : 
+    for index2 in range(len(alphaList)) : 
+      if temp[index] == alphaList[index2] :
+        break
+      if index2 + 1 == len(alphaList) :
+        sList.remove(temp[index])
+    
+  final = ''.join(sList)
+  return final
+    
 
