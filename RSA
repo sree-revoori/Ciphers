@@ -62,6 +62,11 @@ def prepare_string(s, alphabet) :
       totient = totient + 1
   return totient
   
+  def calc_d(n, m) : 
+  #print(str(greenList))
+  
+  
+  
   
   
   
