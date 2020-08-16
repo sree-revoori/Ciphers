@@ -86,6 +86,8 @@ def prepare_string(s, alphabet) :
   while(miller_rabin_test(randomPrime2)) == False : 
     randomPrime2 = randint(pow(2, lowerBound), pow(2, upperBound))
     
+  randomPrime1 = 605626429300532055681678497537    
+  randomPrime2 = 424941193007525678030099023937 
 
   
   
