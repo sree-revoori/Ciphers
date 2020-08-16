@@ -81,6 +81,13 @@ def prepare_string(s, alphabet) :
   randomPrime1 = randint(pow(2, lowerBound), pow(2, upperBound))
   randomPrime2 = randint(pow(2, lowerBound), pow(2, upperBound))
   
+  while(miller_rabin_test(randomPrime1)) == False : 
+    randomPrime1 = randint(pow(2, lowerBound), pow(2, upperBound))
+  while(miller_rabin_test(randomPrime2)) == False : 
+    randomPrime2 = randint(pow(2, lowerBound), pow(2, upperBound))
+    
+
+  
   
   
   
