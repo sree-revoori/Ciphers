@@ -110,18 +110,12 @@ def prepare_string(s, alphabet) :
   d = calc_d(e, t) 
   #d = 47805616365403815519405205326263404439887475430604730880757484858225949531178382490388932549530254407837945983592298514189056426468833752590708160947947130696188829357561671314268790654506892125449716516811334050050477076583294717565294193911015241442065845060327426130862347034780311446406894806440298287305
     
+  print("e is: " + str(e) + " and d is: " + str(d) + " and if this worked, this is 1:1")
+  print("Your input is: " + plaintext)
+  print("Your alphabet is: " + alphabet)
+  #plaintext = plaintext.upper() 
+  plaintext = prepare_string(plaintext, alphabet)
+  print("Prepared input is: " + plaintext) 
   
   
   
-  
-  
-      
-  
-  
-  
-  
-  
-  
-  
-    
-
