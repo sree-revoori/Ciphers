@@ -78,6 +78,11 @@ def prepare_string(s, alphabet) :
   print("Your choice of low bound is two to the following power: " + str(lowerBound))
   print("Your choice of upper bound is two to the following power: " + str(upperBound))
   
+  randomPrime1 = randint(pow(2, lowerBound), pow(2, upperBound))
+  randomPrime2 = randint(pow(2, lowerBound), pow(2, upperBound))
+  
+  
+  
   
       
   
