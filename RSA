@@ -88,7 +88,29 @@ def prepare_string(s, alphabet) :
     
   randomPrime1 = 605626429300532055681678497537    
   randomPrime2 = 424941193007525678030099023937 
-
+  
+  print("Your two primes are: " + str(randomPrime1) + "     " + str(randomPrime2))
+  
+  mod = randomPrime1 * randomPrime2
+  mod = 1873788469697
+  
+  t = (randomPrime1 - 1) * (randomPrime2 - 1)
+  
+  print("The mod is: " + str(mod) + " and the totient is: " + str(t))
+  
+  e = 65537 
+  
+  if math.gcd(e, t) == 1: 
+    pass
+  else: 
+    for number in range(1, t): 
+      if (math.gcd(number, t)) == 1: 
+        e = number
+       
+  d = calc_d(e, t) 
+  #d = 47805616365403815519405205326263404439887475430604730880757484858225949531178382490388932549530254407837945983592298514189056426468833752590708160947947130696188829357561671314268790654506892125449716516811334050050477076583294717565294193911015241442065845060327426130862347034780311446406894806440298287305
+    
+  
   
   
   
