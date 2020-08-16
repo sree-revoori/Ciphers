@@ -72,6 +72,14 @@ def prepare_string(s, alphabet) :
   if b == 1 : 
       return a % m 
       
+  def rsa(num, plaintext, alphabet) : 
+  lowerBound = num - 1
+  upperBound = num
+  print("Your choice of low bound is two to the following power: " + str(lowerBound))
+  print("Your choice of upper bound is two to the following power: " + str(upperBound))
+  
+  
+      
   
   
   
