@@ -117,5 +117,13 @@ def prepare_string(s, alphabet) :
   plaintext = prepare_string(plaintext, alphabet)
   print("Prepared input is: " + plaintext) 
   
+  l = len(alphabet)
+  largestPower = 0 
+  
+  while pow(l, largestPower) < mod: 
+    largestPower += 1 
+
+  largestPower = largestPower - 1
+  
   
   
