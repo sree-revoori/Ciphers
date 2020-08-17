@@ -125,5 +125,7 @@ def prepare_string(s, alphabet) :
 
   largestPower = largestPower - 1
   
+  print("Alphabet length is: " + str(l) + " and the highest power is " + str(largestPower))
+  
   
   
