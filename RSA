@@ -127,5 +127,18 @@ def prepare_string(s, alphabet) :
   
   print("Alphabet length is: " + str(l) + " and the highest power is " + str(largestPower))
   
+  substringList = list()
+  if(len(plaintext)%largestPower == 0): 
+    numObjects = len(plaintext)/largestPower
+  else: 
+    numObjects = (len(plaintext)/largestPower) + 1
+    numOfZ = largestPower - (len(plaintext)%largestPower)
+    count = 0
+    while (count < numOfZ) : 
+      plaintext = plaintext + "Z"
+      count = count + 1
+  
+  
+  
   
   
