@@ -169,8 +169,11 @@ def prepare_string(s, alphabet) :
     print("Encoded to: " + str(encryptedList))
     
     for k in range(len(encryptedList)) : 
-    temp = pow(encryptedList[k], d, mod)
-    decryptedList.append(temp)
+        temp = pow(encryptedList[k], d, mod)
+        decryptedList.append(temp)
+    
+    
+    print("Decoded to: " + str(decryptedList))
     
     
   
