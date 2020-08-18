@@ -184,6 +184,20 @@ def prepare_string(s, alphabet) :
       decrypted = decrypted // l
     totalString += string[::-1]
     
+    print("Back to text: " + totalString)
+
+  
+      
+
+
+
+
+    
+    #pow(message, e, m)
+    
+    
+  
+    
     
   
   
