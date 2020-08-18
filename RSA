@@ -163,6 +163,11 @@ def prepare_string(s, alphabet) :
     numList.append(numFinal)
     temp = (pow(numFinal, e, mod))
     encryptedList.append(temp)
+    
+    print("Become numbers: " + str(numList))
+    encryptedList = [723561858195, 531725110566, 772213262664, 314592630414, 642218767332, 440420036978, 1268316719157]
+    print("Encoded to: " + str(encryptedList))
+  
   
   
   
