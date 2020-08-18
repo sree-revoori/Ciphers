@@ -195,6 +195,12 @@ def prepare_string(s, alphabet) :
     
     #pow(message, e, m)
     
+    #send someone your e, m; they encrypt it and send back to you  
+    #print(totient(1873788469697))
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    print(rsa(512, "RSA ENCRYPTION IS NAMED AFTER RON RIVEST ADI SHAMIR AND LEONARD ADLEMAN", alphabet))
+    #print(calc_d(65537, 157188310234213545456623160))
+    
     
   
     
