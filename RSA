@@ -175,6 +175,15 @@ def prepare_string(s, alphabet) :
     
     print("Decoded to: " + str(decryptedList))
     
+    totalString = ""
+    for k in range(len(decryptedList)) : 
+        decrypted = decryptedList[k]
+        string = ""
+    while(decrypted > l) : 
+      string += i2c(decrypted % l, alphabet)
+      decrypted = decrypted // l
+    totalString += string[::-1]
+    
     
   
   
