@@ -7,4 +7,7 @@ def c2i(c, alphabet):
 def i2c(i, alphabet):
     return alphabet[i]
 
+def rsa_password_cracking(): 
+  alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz.;:-, !'0123456789"
+
 
