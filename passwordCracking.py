@@ -16,3 +16,8 @@ commonPasswordList = list()
 #### open a text file. read it line by line. strip the "\n" off each line then split the line into three strings separated by whitespace. 
 file = open("common-passwords.txt", "r")
 
+for line in file.readlines() :
+    line = line.strip()
+    if line.isalpha() == True and len(line) > 5:
+      commonPasswordList.append(line)
+file.close()
