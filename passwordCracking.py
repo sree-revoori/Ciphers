@@ -13,4 +13,6 @@ def rsa_password_cracking():
 commonPasswordList = list()
   usernameList = ["meckel", "Meckel", "mEckel", "MEckel","mceckel", "Mceckel", "mCeckel", "mcEckel", "MCeckel", "McEckel", "mCEckel", "MCEckel", "malcolm.eckel", "Malcolm.eckel", "malcolm.Eckel", "Malcolm.Eckel"]
 
+#### open a text file. read it line by line. strip the "\n" off each line then split the line into three strings separated by whitespace. 
+file = open("common-passwords.txt", "r")
 
