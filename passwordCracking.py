@@ -38,3 +38,18 @@ print("Alphabet length is: " + str(l) + " and the highest power is " + str(large
 
 actualNum = 89897807505048742568624266076183099622868191865791675665199726198073166863517809194896619121285164863721775826174711988683028633449762554684260071137667277939952878337117007006682648484027616481552917086710938427047904293454110730563208669424803871616352517233729085665806037146392445377160226330123954583864
 
+for password in commonPasswordList : 
+    for username in usernameList : 
+      plaintext = "userid:" + username + ", password:" + password
+      #print(plaintext)
+      substringList = list()
+      if(len(plaintext)%largestPower == 0): 
+        numObjects = len(plaintext)/largestPower
+      else: 
+        numObjects = (len(plaintext)/largestPower) + 1
+        numOfZ = largestPower - (len(plaintext)%largestPower)
+        count = 0
+      while (count < numOfZ) : 
+        plaintext = plaintext + "Z"
+        count = count + 1
+  
