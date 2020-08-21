@@ -28,3 +28,6 @@ e = 65537
 
 l = len(alphabet)
 largestPower = 0 
+
+while pow(l, largestPower) < mod: 
+    largestPower += 1 
