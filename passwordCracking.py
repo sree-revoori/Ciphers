@@ -31,3 +31,7 @@ largestPower = 0
 
 while pow(l, largestPower) < mod: 
     largestPower += 1 
+
+largestPower = largestPower - 1
+
+print("Alphabet length is: " + str(l) + " and the highest power is " + str(largestPower))
