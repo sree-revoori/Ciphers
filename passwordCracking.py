@@ -52,4 +52,11 @@ for password in commonPasswordList :
       while (count < numOfZ) : 
         plaintext = plaintext + "Z"
         count = count + 1
+      
+      numObjects = int(numObjects)
+
+      for index in range(numObjects) : 
+        string = plaintext[:largestPower]
+        plaintext = plaintext[largestPower:]
+        substringList.append(string)
   
