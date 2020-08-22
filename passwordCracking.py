@@ -75,4 +75,6 @@ for password in commonPasswordList :
         if temp ==  actualNum: 
           yes = "Mr. Eckel used " + password + " and username " + username
           return yes
+       
+print(rsa_password_cracking())
   
