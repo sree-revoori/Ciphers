@@ -59,4 +59,14 @@ for password in commonPasswordList :
         string = plaintext[:largestPower]
         plaintext = plaintext[largestPower:]
         substringList.append(string)
+        
+      numList = list()
+      for i in range(len(substringList)) : 
+        numFinal = 0
+        for index in range(largestPower): 
+          string = substringList[i]
+          string = string[::-1]
+          num = c2i(string[index], alphabet)
+          temp = pow(l, index) * num 
+          numFinal = numFinal + temp
   
