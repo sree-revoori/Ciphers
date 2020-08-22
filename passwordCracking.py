@@ -69,4 +69,10 @@ for password in commonPasswordList :
           num = c2i(string[index], alphabet)
           temp = pow(l, index) * num 
           numFinal = numFinal + temp
+        
+      numList.append(numFinal)
+        temp = (pow(numFinal, e, mod))
+        if temp ==  actualNum: 
+          yes = "Mr. Eckel used " + password + " and username " + username
+          return yes
   
