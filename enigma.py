@@ -5,16 +5,16 @@ ringPositions = "DEF"
 plugboard = "AT BS DE FM IR KN LZ OW PV XY"
 
 def caesarShift(str, amount):
-	output = ""
+  output = ""
 
-	for i in range(0,len(str)):
-		c = str[i]
-		code = ord(c)
-		if ((code >= 65) and (code <= 90)):
-			c = chr(((code - 65 + amount) % 26) + 65)
-		output = output + c
+  for i in range(0,len(str)):
+    c = str[i]
+    code = ord(c)
+    if ((code >= 65) and (code <= 90)):
+	c = chr(((code - 65 + amount) % 26) + 65)
+	output = output + c
 	
-	return output
+  return output
 
 def encode(plaintext):
   global rotors, reflector,ringSettings,ringPositions,plugboard
