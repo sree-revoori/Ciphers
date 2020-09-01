@@ -41,3 +41,8 @@ def encode(plaintext):
   rotorANotch = False
   rotorBNotch = False
   rotorCNotch = False
+
+  if reflector=="UKW-B":
+    reflectorDict = reflectorB
+  else:
+    reflectorDict = reflectorC
