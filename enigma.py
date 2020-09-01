@@ -30,3 +30,6 @@ def encode(plaintext):
   rotor4Notch = "J"
   rotor5 = "VZBRGITYUPSDNHLXAWMJQOFECK"
   rotor5Notch = "Z" 
+
+  rotorDict = {"I":rotor1,"II":rotor2,"III":rotor3,"IV":rotor4,"V":rotor5}
+  rotorNotchDict = {"I":rotor1Notch,"II":rotor2Notch,"III":rotor3Notch,"IV":rotor4Notch,"V":rotor5Notch} 
