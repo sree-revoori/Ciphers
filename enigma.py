@@ -15,4 +15,5 @@ def caesarShift(str, amount):
 		output = output + c
 	
 	return output
-
+def encode(plaintext):
+  global rotors, reflector,ringSettings,ringPositions,plugboard
