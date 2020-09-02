@@ -65,4 +65,8 @@ def encode(plaintext):
   offsetBSetting = alphabet.index(rotorBSetting)
   rotorCSetting = ringSettings[2]
   offsetCSetting = alphabet.index(rotorCSetting)
+	
+  rotorA = caesarShift(rotorA,offsetASetting)
+  rotorB = caesarShift(rotorB,offsetBSetting)
+  rotorC = caesarShift(rotorC,offsetCSetting)
   
