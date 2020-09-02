@@ -46,3 +46,11 @@ def encode(plaintext):
     reflectorDict = reflectorB
   else:
     reflectorDict = reflectorC
+
+#A = Left,  B = Mid,  C=Right 
+  rotorA = rotorDict[rotors[0]]
+  rotorB = rotorDict[rotors[1]]
+  rotorC = rotorDict[rotors[2]]
+  rotorANotch = rotorNotchDict[rotors[0]]
+  rotorBNotch = rotorNotchDict[rotors[1]]
+  rotorCNotch = rotorNotchDict[rotors[2]]
