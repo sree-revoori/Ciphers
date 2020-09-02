@@ -58,3 +58,11 @@ def encode(plaintext):
   rotorALetter = ringPositions[0]
   rotorBLetter = ringPositions[1]
   rotorCLetter = ringPositions[2]
+	
+  rotorASetting = ringSettings[0]
+  offsetASetting = alphabet.index(rotorASetting)
+  rotorBSetting = ringSettings[1]
+  offsetBSetting = alphabet.index(rotorBSetting)
+  rotorCSetting = ringSettings[2]
+  offsetCSetting = alphabet.index(rotorCSetting)
+  
