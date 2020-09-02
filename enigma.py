@@ -19,7 +19,7 @@ def caesarShift(str, amount):
 def encode(plaintext):
   global rotors, reflector,ringSettings,ringPositions,plugboard
 	
-#Enigma Rotors and reflectors
+  #Enigma Rotors and reflectors
   rotor1 = "EKMFLGDQVZNTOWYHXUSPAIBRCJ"
   rotor1Notch = "Q"
   rotor2 = "AJDKSIRUXBLHWTMCQGZNPYFVOE"
