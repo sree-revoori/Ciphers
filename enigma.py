@@ -69,4 +69,11 @@ def encode(plaintext):
   rotorA = caesarShift(rotorA,offsetASetting)
   rotorB = caesarShift(rotorB,offsetBSetting)
   rotorC = caesarShift(rotorC,offsetCSetting)
+
+  if offsetASetting>0:
+    rotorA = rotorA[26-offsetASetting:] + rotorA[0:26-offsetASetting]
+  if offsetBSetting>0:
+    rotorB = rotorB[26-offsetBSetting:] + rotorB[0:26-offsetBSetting]
+  if offsetCSetting>0:
+    rotorC = rotorC[26-offsetCSetting:] + rotorC[0:26-offsetCSetting]
   
