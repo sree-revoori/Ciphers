@@ -54,3 +54,7 @@ def encode(plaintext):
   rotorANotch = rotorNotchDict[rotors[0]]
   rotorBNotch = rotorNotchDict[rotors[1]]
   rotorCNotch = rotorNotchDict[rotors[2]]
+
+  rotorALetter = ringPositions[0]
+  rotorBLetter = ringPositions[1]
+  rotorCLetter = ringPositions[2]
