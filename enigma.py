@@ -90,4 +90,8 @@ def encode(plaintext):
   plaintext = plaintext.upper()  
   for letter in plaintext:
     encryptedLetter = letter  
+    if letter in alphabet:
+      #Rotate Rotors - This happens as soon as a key is pressed, before encrypting the letter!
+      rotorTrigger = False
+      #Third rotor rotates by 1 for every key being pressed
   
