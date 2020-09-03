@@ -78,4 +78,12 @@ def encode(plaintext):
     rotorC = rotorC[26-offsetCSetting:] + rotorC[0:26-offsetCSetting]
 
   ciphertext = ""
+	
+  #Converplugboard settings into a dictionary
+  plugboardConnections = plugboard.upper().split(" ")
+  plugboardDict = {}
+  for pair in plugboardConnections:
+    if len(pair)==2:
+      plugboardDict[pair[0]] = pair[1]
+      plugboardDict[pair[1]] = pair[0]
   
