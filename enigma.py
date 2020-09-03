@@ -76,4 +76,6 @@ def encode(plaintext):
     rotorB = rotorB[26-offsetBSetting:] + rotorB[0:26-offsetBSetting]
   if offsetCSetting>0:
     rotorC = rotorC[26-offsetCSetting:] + rotorC[0:26-offsetCSetting]
+
+  ciphertext = ""
   
