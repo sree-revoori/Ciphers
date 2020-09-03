@@ -86,4 +86,8 @@ def encode(plaintext):
     if len(pair)==2:
       plugboardDict[pair[0]] = pair[1]
       plugboardDict[pair[1]] = pair[0]
+	
+  plaintext = plaintext.upper()  
+  for letter in plaintext:
+    encryptedLetter = letter  
   
