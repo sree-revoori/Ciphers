@@ -103,4 +103,9 @@ def encode(plaintext):
         if rotorBLetter == rotorBNotch:
           rotorTrigger = True 
         rotorBLetter = alphabet[(alphabet.index(rotorBLetter) + 1) % 26]
+	
+	Check if rotorA needs to rotate
+        if (rotorTrigger):
+          rotorTrigger = False
+          rotorALetter = alphabet[(alphabet.index(rotorALetter) + 1) % 26]
   
