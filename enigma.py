@@ -94,4 +94,13 @@ def encode(plaintext):
       #Rotate Rotors - This happens as soon as a key is pressed, before encrypting the letter!
       rotorTrigger = False
       #Third rotor rotates by 1 for every key being pressed
+      if rotorCLetter == rotorCNotch:
+        rotorTrigger = True 
+      rotorCLetter = alphabet[(alphabet.index(rotorCLetter) + 1) % 26]
+      #Check if rotorB needs to rotate
+      if rotorTrigger:
+        rotorTrigger = False
+        if rotorBLetter == rotorBNotch:
+          rotorTrigger = True 
+        rotorBLetter = alphabet[(alphabet.index(rotorBLetter) + 1) % 26]
   
