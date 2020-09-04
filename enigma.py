@@ -130,6 +130,13 @@ def encode(plaintext):
       let = rotorC[(pos + offsetC)%26]
       pos = alphabet.index(let)
       encryptedLetter = alphabet[(pos - offsetC +26)%26]
+
+      # Wheel 2 Encryption
+      pos = alphabet.index(encryptedLetter)
+      let = rotorB[(pos + offsetB)%26]
+      pos = alphabet.index(let)
+      encryptedLetter = alphabet[(pos - offsetB +26)%26]
+      
       
         
   
