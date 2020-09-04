@@ -108,4 +108,11 @@ def encode(plaintext):
         if (rotorTrigger):
           rotorTrigger = False
           rotorALetter = alphabet[(alphabet.index(rotorALetter) + 1) % 26]
+	
+	else:
+          #Check for double step sequence!
+        if rotorBLetter == rotorBNotch:
+          rotorBLetter = alphabet[(alphabet.index(rotorBLetter) + 1) % 26]
+          rotorALetter = alphabet[(alphabet.index(rotorALetter) + 1) % 26]
+        
   
