@@ -119,5 +119,10 @@ def encode(plaintext):
       if letter in plugboardDict.keys():
         if plugboardDict[letter]!="":
           encryptedLetter = plugboardDict[letter]
+	
+      #Rotors & Reflector Encryption
+      offsetA = alphabet.index(rotorALetter)
+      offsetB = alphabet.index(rotorBLetter)
+      offsetC = alphabet.index(rotorCLetter)
         
   
