@@ -114,5 +114,10 @@ def encode(plaintext):
         if rotorBLetter == rotorBNotch:
           rotorBLetter = alphabet[(alphabet.index(rotorBLetter) + 1) % 26]
           rotorALetter = alphabet[(alphabet.index(rotorALetter) + 1) % 26]
+	
+	#Implement plugboard encryption!
+      if letter in plugboardDict.keys():
+        if plugboardDict[letter]!="":
+          encryptedLetter = plugboardDict[letter]
         
   
