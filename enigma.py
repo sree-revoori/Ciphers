@@ -176,6 +176,11 @@ def encode(plaintext):
   
   return ciphertext
 
+
+  #Main Program Starts Here
+  print("  ##### Enigma Encoder #####")
+  print("")
+
       
       
       
