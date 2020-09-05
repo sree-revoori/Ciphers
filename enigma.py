@@ -166,6 +166,12 @@ def encode(plaintext):
       let = alphabet[(pos + offsetC)%26]
       pos = rotorC.index(let)
       encryptedLetter = alphabet[(pos - offsetC +26)%26]
+	
+	#Implement plugboard encryption!
+      if encryptedLetter in plugboardDict.keys():
+        if plugboardDict[encryptedLetter]!="":
+          encryptedLetter = plugboardDict[encryptedLetter]
+
       
       
       
