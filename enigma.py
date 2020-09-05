@@ -182,6 +182,8 @@ def encode(plaintext):
   print("")
   plaintext = input("Enter text to encode or decode:\n")
   ciphertext = encode(plaintext)
+	
+  print("\nEncoded text: \n " + ciphertext)
 
       
       
