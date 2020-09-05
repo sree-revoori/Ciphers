@@ -171,6 +171,10 @@ def encode(plaintext):
       if encryptedLetter in plugboardDict.keys():
         if plugboardDict[encryptedLetter]!="":
           encryptedLetter = plugboardDict[encryptedLetter]
+	
+	ciphertext = ciphertext + encryptedLetter
+  
+  return ciphertext
 
       
       
