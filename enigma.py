@@ -142,6 +142,12 @@ def encode(plaintext):
       let = rotorA[(pos + offsetA)%26]
       pos = alphabet.index(let)
       encryptedLetter = alphabet[(pos - offsetA +26)%26]
+
+      # Reflector encryption!
+      if encryptedLetter in reflectorDict.keys():
+        if reflectorDict[encryptedLetter]!="":
+          encryptedLetter = reflectorDict[encryptedLetter]
+      
       
       
         
