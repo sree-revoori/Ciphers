@@ -8,5 +8,6 @@ A repository of various ciphers and cryptosytems that I have programmed. My goal
   - Enigma Cipher
   - RSA
   - Cryptographic Computational Tests
-    - 
+    - Miller-Rabin Test
+    - Index of Coincidence
   
