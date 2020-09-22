@@ -13,5 +13,9 @@ A repository of various ciphers and cryptosytems that I have programmed. My goal
   - ADFGVX Cipher
   - Image Encoding Cryptosystem
   - Paillier Cryptosystem
+  
+### Future Functionalities
+  - More Public-Key Cryptography
+  - Quantum Cryptosystems
 
   
