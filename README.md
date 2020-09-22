@@ -4,4 +4,9 @@ A repository of various ciphers and cryptosytems that I have programmed. My goal
 ### Available Functionalities
   - Caesar Cipher
   - Vigenere Cipher
+  - Affine Cipher
+  - Enigma Cipher
+  - RSA
+  - Cryptographic Computational Tests
+    - 
   
