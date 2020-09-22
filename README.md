@@ -11,5 +11,7 @@ A repository of various ciphers and cryptosytems that I have programmed. My goal
     - Miller-Rabin Test
     - Index of Coincidence
   - ADFGVX Cipher
-  -
+  - Image Encoding Cryptosystem
+  - Paillier Cryptosystem
+
   
