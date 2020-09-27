@@ -17,5 +17,6 @@ A repository of various ciphers and cryptosytems that I have programmed. My goal
 ### Future Functionalities
   - More Public-Key Cryptography
   - Quantum Cryptosystems
+  - Statistical Cryptosystem Tests
 
   
