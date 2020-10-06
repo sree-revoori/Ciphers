@@ -14,7 +14,8 @@ from cryptoLibrary import hillCipher
 
 def test_Affine_Cipher():
   assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == JIUVKYBXWAOA
-  
+  assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == CYCLOGENESIS
+  assert Affin
 
 def test_Basic_Ciphers():
   assert Basic_Ciphers.
