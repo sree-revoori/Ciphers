@@ -12,5 +12,8 @@ from cryptoLibrary import Index_of_Coincidence
 from cryptoLibrary import hillCipher
 
 
+def test_Basic_Ciphers():
+  assert Basic_Ciphers.
+
 def test_RSA():
   assert RSA.rsa(512, "RSA ENCRYPTION IS NAMED AFTER RON RIVEST ADI SHAMIR AND LEONARD ADLEMAN", alphabet) == DXMWXQZSUHAWVVSSKBPPKKJZZLUEVWXYGQPTMUDNMCPLLSWOVHWNAEMMF
