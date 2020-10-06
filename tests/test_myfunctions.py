@@ -16,7 +16,8 @@ def test_Affine_Cipher():
   assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == JIUVKYBXWAOA
   assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == CYCLOGENESIS
   assert Affine_Cipher.affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119) == FKGRGRTCBUMBKUURDG
-  assert Affine_Cipher.affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29) == U2N1UIR0UANW
+  assert Affine_Cipher.affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29) == U2N1UIR0UANW1TW0CT3TWJZM
+  assert Affine_Cipher.affine_decode("U2N1UIR0UANW1TW0CT3TWJZM", alphabet1, 13, 29) == ANEWALPHABETWITHDIGITS12
 
 def test_Basic_Ciphers():
   assert Basic_Ciphers.
