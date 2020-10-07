@@ -18,7 +18,8 @@ def test_Affine_Cipher():
   assert Affine_Cipher.affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119) == FKGRGRTCBUMBKUURDG
   assert Affine_Cipher.affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29) == U2N1UIR0UANW1TW0CT3TWJZM
   assert Affine_Cipher.affine_decode("U2N1UIR0UANW1TW0CT3TWJZM", alphabet1, 13, 29) == ANEWALPHABETWITHDIGITS12
-
+def test_Index_of_Coincidence():
+  
 def test_Basic_Ciphers():
   assert Basic_Ciphers.
 
