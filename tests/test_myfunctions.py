@@ -14,16 +14,21 @@ from cryptoLibrary import hillCipher
 def almostEqual(x, y):
     return abs(x - y) < 10**-9
 
+def test_hillCipher():
+    
+    
 def test_Affine_Cipher():
-  assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == JIUVKYBXWAOA
-  assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == CYCLOGENESIS
-  assert Affine_Cipher.affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119) == FKGRGRTCBUMBKUURDG
-  assert Affine_Cipher.affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29) == U2N1UIR0UANW1TW0CT3TWJZM
-  assert Affine_Cipher.affine_decode("U2N1UIR0UANW1TW0CT3TWJZM", alphabet1, 13, 29) == ANEWALPHABETWITHDIGITS12
+    assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == JIUVKYBXWAOA
+    assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == CYCLOGENESIS
+    assert Affine_Cipher.affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119) == FKGRGRTCBUMBKUURDG
+    assert Affine_Cipher.affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29) == U2N1UIR0UANW1TW0CT3TWJZM
+    assert Affine_Cipher.affine_decode("U2N1UIR0UANW1TW0CT3TWJZM", alphabet1, 13, 29) == ANEWALPHABETWITHDIGITS12
+
 def test_Index_of_Coincidence():
-  assert almostEqual(Index_of_Coincidence.ioc("YTSPOQCONOVOTNOTBTDIDIQCOHDLLGOJRQCOIDBCQVOLTIYOTNJSILQCOFDQYCOIDIQCONORNDBONTQJNGDBCQLJVIQCOPQTDNPDVTPQCONODNOHOHAONDQTGGQJJVOGGXOTC"), 0.07666894508999772)
+    assert almostEqual(Index_of_Coincidence.ioc("YTSPOQCONOVOTNOTBTDIDIQCOHDLLGOJRQCOIDBCQVOLTIYOTNJSILQCOFDQYCOIDIQCONORNDBONTQJNGDBCQLJVIQCOPQTDNPDVTPQCONODNOHOHAONDQTGGQJJVOGGXOTC"), 0.07666894508999772)
+
 def test_Basic_Ciphers():
-  assert Basic_Ciphers.
+    assert Basic_Ciphers.
 
 def test_RSA():
-  assert RSA.rsa(512, "RSA ENCRYPTION IS NAMED AFTER RON RIVEST ADI SHAMIR AND LEONARD ADLEMAN", alphabet) == DXMWXQZSUHAWVVSSKBPPKKJZZLUEVWXYGQPTMUDNMCPLLSWOVHWNAEMMF
+    assert RSA.rsa(512, "RSA ENCRYPTION IS NAMED AFTER RON RIVEST ADI SHAMIR AND LEONARD ADLEMAN", alphabet) == DXMWXQZSUHAWVVSSKBPPKKJZZLUEVWXYGQPTMUDNMCPLLSWOVHWNAEMMF
