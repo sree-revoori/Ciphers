@@ -11,6 +11,8 @@ from cryptoLibrary import ADFGVX_Cipher
 from cryptoLibrary import Index_of_Coincidence
 from cryptoLibrary import hillCipher
 
+def almostEqual(x, y):
+    return abs(x - y) < 10**-9
 
 def test_Affine_Cipher():
   assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == JIUVKYBXWAOA
