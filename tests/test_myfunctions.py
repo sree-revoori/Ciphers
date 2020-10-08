@@ -17,8 +17,9 @@ def almostEqual(x, y):
 def test_hillCipher():
     assert hillCipher.hill_decode("tTtp?cIretbpAw,:YKEvcdsWgsydbpcxqmxlz!jfRlxlUM", mat4, alpha, 59) == "I WILL GO IN THIS WAY, AND FIND MY WAY OUT"
     assert hillCipher.hill_decode("CnzHbKasnOnbeznbhtmHAcv,Xlnbro?M", mat4, alpha, 59) == "All at once the ghosts come back"
+    assert hillCipher.hill_encode("ALPHABET", mat1, alphabet1, 20) == "TIUYBURG"
     assert hillCipher.hill_decode("TIUYBURG", mat1, alphabet1, 20) == "ALPHABET"
-    assert hillCipher.hill_encode("INFINITYWARX", mat3, alphabet, 26) == "TIUYBURG"
+    assert hillCipher.hill_encode("INFINITYWARX", mat3, alphabet, 26) == "JTMFILIFCKVU"
 def test_Affine_Cipher():
     assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == "JIUVKYBXWAOA"
     assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == "CYCLOGENESIS"
