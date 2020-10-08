@@ -15,7 +15,7 @@ def almostEqual(x, y):
     return abs(x - y) < 10**-9
 
 def test_hillCipher():
-    
+    assert hillCipher.hill_decode("tTtp?cIretbpAw,:YKEvcdsWgsydbpcxqmxlz!jfRlxlUM", mat4, alpha, 59) == "I WILL GO IN THIS WAY, AND FIND MY WAY OUT"
     
 def test_Affine_Cipher():
     assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == JIUVKYBXWAOA
