@@ -15,6 +15,17 @@ def almostEqual(x, y):
     return abs(x - y) < 10**-9
 
 def test_hillCipher():
+    mat1 = [[7, 6], [4, 13]]
+    mat2 = [[4, 3], [5, 6]]
+    mat3 = [[6, 1], [17, 3]]
+    mat4 = [[27, 13], [5, 14]]
+    mat5 = hillCipher.determine_encoding_matrix("TYIL", "RHRM", alphabet, 26)
+    mat6 = hillCipher.determine_encoding_matrix("TYIL", "RHRM", alpha, 59)
+    
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    alphabet1= "ALPHBETYQWERUIOPJHGN"
+    alpha = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz.!?, ':"
+    
     assert hillCipher.hill_decode("tTtp?cIretbpAw,:YKEvcdsWgsydbpcxqmxlz!jfRlxlUM", mat4, alpha, 59) == "I WILL GO IN THIS WAY, AND FIND MY WAY OUT"
     assert hillCipher.hill_decode("CnzHbKasnOnbeznbhtmHAcv,Xlnbro?M", mat4, alpha, 59) == "All at once the ghosts come back"
     assert hillCipher.hill_encode("ALPHABET", mat1, alphabet1, 20) == "TIUYBURG"
@@ -23,6 +34,7 @@ def test_hillCipher():
     assert hillCipher.hill_decode("JTMFILIFCKXA", mat3, alphabet, 26) == "INFINITYWARX"
     assert hillCipher.determine_encoding_matrix("TYIL", "RHRM", alphabet, 26) == [[13, 11], [9, 4]]
     assert hillCipher.hill_decode("RMYAAMRHMYRSDPSAMRRCXCBIFBFNMRBYQAFLJSNUAC", mat5, alphabet, 26) == "ILOOKATYOUALLSEETHELOVETHERETHATSLEEPINGA"
+    
 def test_Affine_Cipher():
     assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == "JIUVKYBXWAOA"
     assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == "CYCLOGENESIS"
