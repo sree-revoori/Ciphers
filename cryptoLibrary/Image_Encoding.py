@@ -201,10 +201,10 @@ def problem_6b(imageName, a, b) :
   
       
   
-#problem_1("Disco.bmp", 53)
-#problem_2("SC.bmp", [[2, 5], [3, 20]])
-#problem_3("Mystery1.bmp", [[2, 3], [5, 20]])
-#problem_4("SC.bmp", [[2, 5], [3, 20]], 14, 5, 256)
-#problem_5("Mystery3.bmp", [[2, 5], [3, 20]], 5, 9, 256)
+problem_1("Disco.bmp", 53)
+problem_2("SC.bmp", [[2, 5], [3, 20]])
+problem_3("Mystery1.bmp", [[2, 3], [5, 20]])
+problem_4("SC.bmp", [[2, 5], [3, 20]], 14, 5, 256)
+problem_5("Mystery3.bmp", [[2, 5], [3, 20]], 5, 9, 256)
 problem_6("logo1.bmp", 251, 101)
-#problem_6b("logoencoded.bmp", 251, 101)
+problem_6b("logoencoded.bmp", 251, 101)
