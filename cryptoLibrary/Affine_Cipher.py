@@ -135,7 +135,7 @@ for a in range(len(alphabet1)):##FOR CRIB QUESTION
   for b in range(len(alphabet1)):
     if(test_formula(a,b,ciphertext,plaintext,alphabet1)==True):
       print(a,b)
-#for i in range(576):
-  #for j in range(576):
-    #if(affine_encode_digraph("EARLYDECISIONX",alpha,i,j)=="RFDYNWCZHDJPIO"):
-      #print(i,j)
+for i in range(576):
+  for j in range(576):
+    if(affine_encode_digraph("EARLYDECISIONX",alpha,i,j)=="RFDYNWCZHDJPIO"):
+      print(i,j)
