@@ -41,6 +41,7 @@ def test_hillCipher():
 
 def test_cryptoTests():
     assert cryptoTests.isPerfectSquare(47) == False
+    assert cryptoTests.isPerfectSquare(49) == True
 
 def test_Affine_Cipher():
     assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == "JIUVKYBXWAOA"
