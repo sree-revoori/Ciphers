@@ -38,7 +38,10 @@ def test_hillCipher():
     assert hillCipher.hill_decode("JTMFILIFCKXA", mat3, alphabet, 26) == "INFINITYWARX"
     assert hillCipher.determine_encoding_matrix("TYIL", "RHRM", alphabet, 26) == [[13, 11], [9, 4]]
     assert hillCipher.hill_decode("RMYAAMRHMYRSDPSAMRRCXCBIFBFNMRBYQAFLJSNUAC", mat5, alphabet, 26) == "ILOOKATYOUALLSEETHELOVETHERETHATSLEEPINGA"
-    
+
+def test_cryptoTests():
+    assert cryptoTests.isPerfectSquare(47) == False
+
 def test_Affine_Cipher():
     assert Affine_Cipher.affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114) == "JIUVKYBXWAOA"
     assert Affine_Cipher.affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31) == "CYCLOGENESIS"
