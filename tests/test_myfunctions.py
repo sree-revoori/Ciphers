@@ -11,6 +11,7 @@ from cryptoLibrary import ADFGVX_Cipher
 from cryptoLibrary import Index_of_Coincidence
 from cryptoLibrary import hillCipher
 import decimal
+import math
 
 def almostEqual(x, y):
     return abs(x - y) < 10**-9
