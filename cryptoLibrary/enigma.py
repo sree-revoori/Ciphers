@@ -180,13 +180,14 @@ def encode(plaintext):
   #Main Program Starts Here
   print("  ##### Enigma Encoder #####")
   print("")
-  plaintext = input("Enter text to encode or decode:\n")
+  plaintext = input("Enter text to encode:\n")
   ciphertext = encode(plaintext)
 	
   print("\nEncoded text: \n " + ciphertext)
 
   print("  ##### Enigma Decoder #####")
   print("")
+  ciphertext = input("Enter text to decode:\n")
 
       
       
