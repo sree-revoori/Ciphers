@@ -189,7 +189,9 @@ def encode(plaintext):
   print("")
   ciphertext = input("Enter text to decode:\n")
   plaintext = decode(ciphertext)
-
+  
+  print("\nDecoded text: \n " + plaintext)
+  
       
       
       
