@@ -186,6 +186,7 @@ def encode(plaintext):
   print("\nEncoded text: \n " + ciphertext)
 
   print("  ##### Enigma Decoder #####")
+  print("")
 
       
       
