@@ -188,6 +188,7 @@ def encode(plaintext):
   print("  ##### Enigma Decoder #####")
   print("")
   ciphertext = input("Enter text to decode:\n")
+  plaintext = decode(ciphertext)
 
       
       
