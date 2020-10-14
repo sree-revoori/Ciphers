@@ -8,6 +8,14 @@ from timeit import default_timer as timer
 #print(factorList)
 #print(factorint(13049723))
 
+def friedman_test(ciphertext, alpha):
+    """Calls index_of_coincidence, then returns the predicted value for keyword length from the friedman test
+    using that value"""
+    ioc = index_of_coincidence(ciphertext, alpha)
+    n = float(len(ciphertext))
+    return (0.027 * n)/(((n-1)*ioc)+0.0655-(0.0385*n))
+
+
 def miller_rabin_test(p): 
   if (p % 2) == 0: 
     #print("Number is composite")
