@@ -32,6 +32,23 @@ def kasiski_test(ciphertext):  #Code partially provided
         distance = index - previousIndex
         distanceList.append(distance)
 
+def index_of_coincidence(ciphertext, alpha):
+   
+  cipher_flat = "".join(
+  [x.upper() for x in ciphertext.split()
+  if x.isalpha() ]
+  )
+
+  N = len(cipher_flat)
+  freqs = collections.Counter( cipher_flat )
+  alphabet = map(chr, range( ord('A'), ord('Z')+1))
+  freqsum = 0.0
+
+  for letter in alphabet:
+    freqsum += freqs[ letter ] * ( freqs[ letter ] - 1 )
+
+  IC = freqsum / ( N*(N-1) )
+  return IC
 
 def miller_rabin_test(p): 
   if (p % 2) == 0: 
