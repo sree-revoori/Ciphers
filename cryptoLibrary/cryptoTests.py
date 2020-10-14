@@ -15,6 +15,23 @@ def friedman_test(ciphertext, alpha):
     n = float(len(ciphertext))
     return (0.027 * n)/(((n-1)*ioc)+0.0655-(0.0385*n))
 
+def kasiski_test(ciphertext):  #Code partially provided
+    """Finds gcd of most common distances between repeated trigraphs
+    Recommended strategy: loop through the ciphertext, keeping a list of trigraphs and a list of distances in this way:
+    1) When encountering a new trigraph add it to the trigraph list
+    2) When encountering a repeat add the distance from current index to first index of that trigraph to the list of distances"""
+    # Here, write code to create the array of distances:
+    trigraphList = []
+    distanceList = []
+    for index in range(len(ciphertext) - 1) : 
+      currentTrigraph = ciphertext[index:index + 3]
+      if currentTrigraph not in trigraphList :
+        trigraphList.append(currentTrigraph)
+      else : 
+        previousIndex = ciphertext.find(currentTrigraph)
+        distance = index - previousIndex
+        distanceList.append(distance)
+
 
 def miller_rabin_test(p): 
   if (p % 2) == 0: 
