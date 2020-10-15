@@ -118,6 +118,7 @@ print(affine_decode_digraph("nNjd oJzrXndiqn:EMiMrXPTcEbdAkai,omA", alphabet, 13
 print(mod_inverse(19, 26))
 print(d2i("HI", alpha))
 print(i2d(190, alpha))
+
 print(affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114))
 print(affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31))
 print(affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119))     
