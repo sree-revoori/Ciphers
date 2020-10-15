@@ -122,6 +122,7 @@ print(i2d(190, alpha))
 print(affine_encode_digraph("BOMBOGENESIS", alpha, 375, 114))
 print(affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31))
 print(affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119))     
+
 alphabet1 = "CVJQ3GIDX1WEOKM2RTBL0SNAFYZHUP"
 print(affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29))
 print(affine_decode("U2N1UIR0UANW1TW0CT3TWJZM", alphabet1, 13, 29))
