@@ -132,6 +132,7 @@ for number in range(17576, 17578) :
 alphabet1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.?0123456789-*"
 plaintext="IPHONE4IS"
 ciphertext="U?NVO42UIPN4M4IPIHFBP?NVO4404B3Z1YHUAAUH4P4BI37UPNFOFAAO47!4IUGOFO!MWUA!6WFAUPJAU54OVHVMUA4!40UT41"
+
 for a in range(len(alphabet1)):##FOR CRIB QUESTION
   for b in range(len(alphabet1)):
     if(test_formula(a,b,ciphertext,plaintext,alphabet1)==True):
