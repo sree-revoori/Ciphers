@@ -124,12 +124,15 @@ print(affine_decode_digraph("PVAIUJKSYRSR", alpha, 343, 31))
 print(affine_encode_digraph("THISISANOTHERTESTX", alpha, 81, 119))     
 
 alphabet1 = "CVJQ3GIDX1WEOKM2RTBL0SNAFYZHUP"
+
 print(affine_encode("ANEWALPHABETWITHDIGITS12", alphabet1, 13, 29))
 print(affine_decode("U2N1UIR0UANW1TW0CT3TWJZM", alphabet1, 13, 29))
 print(mod_inverse(13, 30))
 print("Alphabet Size    # of A Values Possible     # of B Values Possible      Total # of Transformations")
+
 for number in range(17576, 17578) :
   transformation_table(number)
+  
 alphabet1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.?0123456789-*"
 plaintext="IPHONE4IS"
 ciphertext="U?NVO42UIPN4M4IPIHFBP?NVO4404B3Z1YHUAAUH4P4BI37UPNFOFAAO47!4IUGOFO!MWUA!6WFAUPJAU54OVHVMUA4!40UT41"
