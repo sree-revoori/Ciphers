@@ -155,7 +155,7 @@ def find_likely_letters(coset, alpha, eng_freq):
     secondSmallestIndex = sorted(differenceList) [1]
     letter2 = i2c(differenceList.index(secondSmallestIndex), alpha)
 
-    #return statement provided.  feel free to replace "letter1" and "letter2" with other variable names.
+   
     return "the most likely letter is: " + letter1 + " followed by: " + letter2
 
 def crack(ciphertext, alpha, eng_freq):  #Code provided
