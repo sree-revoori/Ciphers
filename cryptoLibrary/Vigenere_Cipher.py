@@ -26,7 +26,8 @@ def generateKey(string, key):
         for i in range(len(string) - 
                        len(key)): 
             key.append(key[i % len(key)]) 
-    return("" . join(key)) 
+    return("".join(key)) 
+
 def vigenere_encode(plaintext, key, alphabet):
   keyword = generateKey(plaintext, key)
   cipher_text = [] 
