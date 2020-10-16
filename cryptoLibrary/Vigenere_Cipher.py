@@ -36,7 +36,8 @@ def vigenere_encode(plaintext, key, alphabet):
              ord(keyword[i])) % 26
         x += ord('A') 
         cipher_text.append(chr(x)) 
-  return("" . join(cipher_text))
+  return("".join(cipher_text))
+
 def vigenere_decode(ciphertext, key, alphabet):
   keyword = generateKey(ciphertext, key)
   orig_text = [] 
@@ -45,7 +46,7 @@ def vigenere_decode(ciphertext, key, alphabet):
              ord(keyword[i]) + 26) % 26
         x += ord('A') 
         orig_text.append(chr(x)) 
-  return("" . join(orig_text)) 
+  return("".join(orig_text)) 
 
 def index_of_coincidence(ciphertext, alpha):
    
